@@ -1,0 +1,61 @@
+body {
+    font-family: "Georgia", sans-serif;
+}
+
+ .card {
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 5px;
+}
+.card h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.desc{
+    font-size: 11px;
+    color:grey;
+}
+
+.card.loaded {
+    opacity: 1; 
+}
+.card img {
+    width: 30%;
+    height: 35%; 
+    display: block;
+    margin: 0 auto; 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#results-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#loading-message {
+    display: none; 
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+
+} 
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+.shimmer {
+    animation: shimmer 5s infinite;
+    background: linear-gradient(90deg, #f0f0f0 25%, #ffffff 50%, #f0f0f0 75%);
+    background-size: 1000px 100%;
+}
+
+
