@@ -34,7 +34,7 @@ async function fetchCards() {
 
             setTimeout(() => {
                 cardElement.style.opacity = '1';
-            }, 100);
+            }, 300);
         });
         page++;
         loading = false;
